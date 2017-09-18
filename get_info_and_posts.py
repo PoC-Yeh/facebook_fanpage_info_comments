@@ -60,7 +60,7 @@ def get_facebookFanPage_comment(token_string, fan_page_name):
     return(posts_list)
     
     
-def show_posts(d):   
+def show_facebookFanPage_comment(d):   
     post_created_time = d["created_time"]
     print(post_created_time)
 
