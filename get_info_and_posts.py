@@ -42,7 +42,7 @@ def next_page_data(input_key):
     for i in input_key["data"]:
         all_data_list.append(i)
     
-    if "paging" in input_key:
+    if "paging" in input_key.keys():
         while True:
             if "next" in input_key["paging"]:
                 new_page = requests.get(input_key['paging']['next']).json()
